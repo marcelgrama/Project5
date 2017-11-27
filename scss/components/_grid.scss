@@ -14,7 +14,7 @@
 	}
 
 	@include mq(small){
-	@include flexbox($direction:column,){
+	@include flexbox($direction:column){
 			}
 	
 
