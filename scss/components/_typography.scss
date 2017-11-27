@@ -1,0 +1,26 @@
+
+.card{
+	width: 90%;
+	margin-left:5%;
+}
+
+//Headlines
+.headline {
+
+	&--primary {
+		@extend %hdln-prim;
+		margin-bottom: em(70px, 42px);
+	}
+
+ 	&--secondary {
+		@extend %hdln-sec;
+		margin-bottom: em(22px, 24px);	
+	}
+
+}
+.link{
+	color:$turqoise;
+}
+.blockquote{
+	@extend %quote;
+}

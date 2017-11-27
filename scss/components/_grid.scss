@@ -1,0 +1,35 @@
+
+
+.grid__row{
+	// .grid__col--3{
+	// 	text-align:center;
+	// }
+	width: 90%;
+	padding-top:em(50px);
+
+	@include grid-colors($ui-colors){
+	border:none;
+	font-size:em(30px);
+	order-radius: em(5px);
+	}
+
+	@include mq(small){
+	@include flexbox($direction:column,){
+			}
+	
+
+}
+}
+.grid__col--3{
+	text-align:center;
+	 }
+// .link + .img--logo{
+// 	text-align:center;
+// }
+.grid__col--12{
+	@include flexbox($direction:column);
+	
+}
+// .link{
+// 	margin-left:31%;
+// }

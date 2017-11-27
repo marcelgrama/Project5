@@ -1,0 +1,74 @@
+// Font Stacks
+
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Breakpoints
+
+$brkpoint-sm    : 480px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1400px;
+
+//Colors
+$turqoise: #56F0C0;
+$white:    #fff;
+$black:    #000;
+$lima:	   #43E331;
+$piper:    #CE4B27;
+$tango:    #F16B22;
+$purple:   #931DD3;
+$amethyst: #AA6CCB;
+$bright:   #0FEBC9;
+$azure:    #0F81EB;
+$spring:   #0FEB98;
+//UI Colors
+$ui-colors: (
+	default: $turqoise,
+	success:  $lima,
+	error:   $piper,
+	warning: $tango,
+	info:    $purple
+
+
+	);
+$grid-colors: (
+	3: $amethyst,
+	4: $bright,
+	5: $azure,
+	6: $azure,
+	7: $piper,
+	8: $tango,
+	12:$spring
+
+	);
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Screen reader text
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}

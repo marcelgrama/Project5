@@ -1,0 +1,60 @@
+
+//Anchor elements
+%a {
+	text-decoration:none;
+	color:inherit;
+	cursor:pointer;
+}
+
+//Navigation Hover
+%navitemshover{
+	background-color:$turqoise;
+    box-shadow: 0 8px 6px -6px $black;
+	color:$white;
+}
+
+// Headlines
+
+%hdln-prim {
+	color: $turqoise;
+  font-weight: $font-weight--light;
+  font-size: em(42px);
+  line-height: (46px/42px);
+  margin-top: 0;
+  padding-left:em(10px);
+}
+%hdln-sec {
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--thin;
+  font-size: em(16px);
+  font-family: $font-family--secondary;
+  opacity: .4;
+}
+%quote {
+  
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--thin;
+  font-size: em(18px);
+  font-family: $font-family--primary;
+  border-left:em(10px) solid $turqoise;
+  border-radius:5px;
+  margin-left:em(10px);
+  padding-left:em(10px);
+}
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : em(10px);
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}

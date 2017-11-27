@@ -1,0 +1,29 @@
+.nav{
+	margin-right:10%;
+	list-style-type:none;
+	padding-top:em(16px);
+	// text-align:center;
+	
+	a{
+
+		@extend %a;
+		font-size:em(20px);
+		margin-top:25px;
+	}
+	@include mq(small){
+		@include flexbox($direction: column){
+			align-self: center;
+			
+		}
+	}
+}
+.nav__item{
+	font-size:em(20px);
+	text-align:center;
+	margin-top:em(16px);
+	&:hover{
+		@extend %navitemshover;
+		border-radius:em(10px);
+	}
+	// border: 1px solid blue;
+}
