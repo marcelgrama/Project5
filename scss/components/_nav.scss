@@ -1,5 +1,5 @@
 .nav{
-	margin-right:5%;
+	
 	list-style-type:none;
 	padding-top:em(16px);
 	// text-align:center;
@@ -11,23 +11,45 @@
 
 		@extend %a;
 		font-size:em(20px);
-		margin-top:25px;
+		margin-top:em(25px);
 	}
 	@include mq(small){
+		margin-right:5%;
 		@include flexbox($direction: column){
 			//align-self: center;
 			
 		}
 	}
+	@include mq(large){
+		width:75%;
+		font-size:em(15px);
+		margin-top:em(20px);
+		margin-left:200px;
+		margin:0;
+	@include flexbox($direction:row,$content:space-around){
+			
+			}
+}
 }
 .nav__item{
+	&:first-child{
+		@extend %navitemshover;
+		border-radius:em(10px);
+	}
+	display:inline-block;
 	font-size:em(20px);
 	text-align:center;
-	margin-top:em(16px);
-
+	@include mq(small){
+		
+		margin-top:em(16px);
+		}
 	&:hover{
 		@extend %navitemshover;
 		border-radius:em(10px);
 	}
 	// border: 1px solid blue;
+	@include mq(large){
+		
+		margin-top:em(10px);
+		}
 }

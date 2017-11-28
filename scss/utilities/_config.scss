@@ -12,13 +12,13 @@ $letter-space    : 1px;
 // Breakpoints
 
 $brkpoint-sm    : 480px;
-$brkpoint-md    : 768px;
-$brkpoint-lg    : 1400px;
+$brkpoint-lg    : 1000px;
 
 //Colors
 $turqoise: #56F0C0;
 $white:    #fff;
 $black:    #000;
+$lightdark: lighten($black,50%);
 $lima:	   #43E331;
 $piper:    #CE4B27;
 $tango:    #F16B22;
@@ -40,7 +40,7 @@ $ui-colors: (
 $grid-colors: (
 	3: $amethyst,
 	4: $bright,
-	5: $azure,
+	5: $lima,
 	6: $azure,
 	7: $piper,
 	8: $tango,
@@ -72,3 +72,11 @@ $trns-duration  : .3s;
 	position: absolute;
 	width: 1px;
 }
+
+//GRID
+
+$g-col-width    : 65px; 
+$g-gutter-width : 20px;  
+$g-col-count    : 12;  
+$g-cont-max-w   : 1050px; 
+

@@ -23,11 +23,6 @@
       @content;
     }
   }
-  @else if $break == "medium" {
-    @media (min-width: $brkpoint-md) {
-      @content;
-    }
-  }
   @else if $break == "large" {
     @media (min-width: $brkpoint-lg) {
       @content;
@@ -45,6 +40,7 @@
 		&--#{$theme} {
 			background-color: $color;    
       @content;
+
 		}
 	}
 }
@@ -54,7 +50,8 @@
 @mixin grid-colors($map) {
   @each $theme, $color in $map {
     &--#{$theme} {
-      background-color: $color;    
+      background-color: $color;   
+      align-items: left;
       @content;
     }
   }

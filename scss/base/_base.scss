@@ -10,7 +10,11 @@ body {
   line-height: ($base__line/$base__font-size);
 }
 .container{
-	padding-left:em(50px);
+
+	padding-left:10%;
 	@include flexbox($direction:column){
 	}
+	 &>*{
+    padding-top:em(30px);
+    }
 }

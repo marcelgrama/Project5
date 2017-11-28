@@ -42,6 +42,8 @@
   padding-left:em(10px);
 }
 %btn {
+  width:100%;
+  height:em(30px);
   padding: 15px 30px;
   border: 0;
   border-radius : em(10px);
@@ -49,6 +51,7 @@
   text-transform: uppercase;
   font-size : em(14px);
   font-weight: $font-weight--medium;
+  line-height:em(10px);
   transition: opacity $trns-duration;
   display: block;
   &:hover {
