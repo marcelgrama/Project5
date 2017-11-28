@@ -6,13 +6,16 @@
 	// }
 	width: 90%;
 	padding-top:em(50px);
-
-	@include grid-colors($ui-colors){
+	
+@each $theme, $color in $grid-colors{
+	.grid__col--#{$theme}.theme__colors{
+	background-color: $color;
 	border:none;
-	font-size:em(30px);
-	order-radius: em(5px);
-	}
-
+	font-size:em(25px);
+	border-radius: em(5px);
+	margin-top:em(5px);
+}
+}	
 	@include mq(small){
 	@include flexbox($direction:column){
 			}
@@ -20,9 +23,11 @@
 
 }
 }
-.grid__col--3{
-	text-align:center;
-	 }
+
+
+// .grid__col--3{
+// 	text-align:center;
+// 	 }
 // .link + .img--logo{
 // 	text-align:center;
 // }

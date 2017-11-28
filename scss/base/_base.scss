@@ -4,16 +4,13 @@
 }
 
 body {
-	color: palette(grey);
+	//color: palette(grey);
   font-size: $base__font-size;
   font-family: $font-family--primary;
   line-height: ($base__line/$base__font-size);
 }
 .container{
-
-	@include flexbox($content: space-around){
+	padding-left:em(50px);
+	@include flexbox($direction:column){
 	}
-}
-a{
-	@extend %a;
 }

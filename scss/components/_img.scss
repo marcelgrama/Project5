@@ -1,5 +1,6 @@
 
 .img {
+
   @include m(avatar) {
     display: block;
     border-radius: 50%;
@@ -7,4 +8,20 @@
     margin-right: auto;
     margin-top: em(24px);
   }
+}
+.img--logo{
+	// text-align:center;
+	//  margin-left:25%;
+	//align-self:center;
+}
+// .grid__col--3{
+// 	@include flexbox(){
+// 		align-self: center;
+// 	};
+// }
+.grid__col--3.theme__colors{
+	@include flexbox(){
+		//align-self:flex-start;
+	}
+	@include grid-colors($grid-colors);
 }

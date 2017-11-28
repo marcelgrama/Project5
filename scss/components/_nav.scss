@@ -1,8 +1,11 @@
 .nav{
-	margin-right:10%;
+	margin-right:5%;
 	list-style-type:none;
 	padding-top:em(16px);
 	// text-align:center;
+	@include flexbox(){
+		align-self:center;
+	}
 	
 	a{
 
@@ -12,7 +15,7 @@
 	}
 	@include mq(small){
 		@include flexbox($direction: column){
-			align-self: center;
+			//align-self: center;
 			
 		}
 	}
@@ -21,6 +24,7 @@
 	font-size:em(20px);
 	text-align:center;
 	margin-top:em(16px);
+
 	&:hover{
 		@extend %navitemshover;
 		border-radius:em(10px);
