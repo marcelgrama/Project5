@@ -1,23 +1,13 @@
 .form {
 	// padding-left:em(30px);
 	padding-top:em(20px);
-	&>input{
-		width:100%;
-		height:em(30px);
-		margin-top:em(20px);
-		border-top:0;
-		border-left:0;
-		border-right:0;	
-	}
-	@include flexbox($direction:column){
+	@include flexbox($direction:column);
 
-	}
-	
 		.headline--secondary {
 		@extend %hdln-sec;
 		margin-bottom: em(22px, 24px);	
 	}
-	
+	//styling  labels for inputs
 	@include e(label) {
 		@include m(hidden) {
 			@extend .srt;
@@ -25,21 +15,17 @@
 		display: block;
 		margin-bottom: em(10px);
 	}
-
+	//styling login inputs
 	@include e(input) {
-		font-size : em(18px);
-		margin-bottom: em(20px, 18px);
-		border-bottom: 6px solid $turqoise;
-		border-radius: em(10px);
-		font-weight: $font-weight--light;
+		@extend %logininputs;
 
 		&:focus {	
 			border-color: $turqoise;
 		}
 	}
-
+	//styling lgin button
 	@include e(btn) {
 		@extend %btn;
-		background: $turqoise;
+		
 	}
 }

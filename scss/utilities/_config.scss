@@ -27,8 +27,9 @@ $amethyst: #AA6CCB;
 $bright:   #0FEBC9;
 $azure:    #0F81EB;
 $spring:   #0FEB98;
+
 //UI Colors
-$ui-colors: (
+$ui-colors: ( 
 	default: $turqoise,
 	success:  $lima,
 	error:   $piper,
@@ -37,6 +38,8 @@ $ui-colors: (
 
 
 	);
+
+//Grid Colors
 $grid-colors: (
 	3: $amethyst,
 	4: $bright,

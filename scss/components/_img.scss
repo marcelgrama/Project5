@@ -2,26 +2,12 @@
 .img {
 
   @include m(avatar) {
-    display: block;
+   @extend %img;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: em(24px);
   }
   @include m(frame) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   @extend %img;
     margin-top: em(10px);
   }
 }
-.img--logo{
-	// text-align:center;
-	//  margin-left:25%;
-	//align-self:center;
-}
-// .grid__col--3{
-// 	@include flexbox(){
-// 		align-self: center;
-// 	};
-// }

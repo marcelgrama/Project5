@@ -2,23 +2,17 @@
 
 .grid__row{
 	width: 90%;
-	@each $theme, $color in $grid-colors{
+	@each $theme, $color in $grid-colors{ 
 	.grid__col--#{$theme}.theme__colors{
 
 	background-color: $color;
-	border:none;
-	font-size:em(20px);
-	border-radius: em(5px);
-	margin-top:em(5px);
-	align-items: left;
+	@extend %grid;
 }
 }	
 	@include mq(small){
 	@include flexbox($direction:column){
 			}
-	
-
-}
+	}
 	@include mq(large){
 		@include flexbox($direction:row,$content:space-around);
 		 @for $i from 1 through $g-col-count {
@@ -33,26 +27,14 @@
 }
 }
 .grid__col--3 {
-   
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-// .grid__col--3{
-// 	text-align:center;
-// 	 }
-// .link + .img--logo{
-// 	text-align:center;
-// }
+   }
+
 .grid__col--12{
 	@include mq(large){
-		
 	@include flexbox($direction:row,$content:space-between);
 		}
-	
 	//width:100%;
 }
-// .link{
-// 	margin-left:31%;
-// }

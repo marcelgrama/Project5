@@ -1,6 +1,3 @@
-// ==========================================================================
-// Mixins
-// ==========================================================================
 
 // BEM selectors
 
@@ -40,7 +37,6 @@
 		&--#{$theme} {
 			background-color: $color;    
       @content;
-
 		}
 	}
 }
@@ -55,44 +51,6 @@
       @content;
     }
   }
-}
-
-// Generating :before or :after pseudo-element shapes
-
-@mixin p-el(
-	$el,
-	$el-w: null,
-	$el-h: null) {
-	@if $el == "before" or $el == "after" { 
-	  &:#{$el} {
-		  @extend %pseudos;
-		  width: $el-w;
-	  	height: $el-h;
-	    @content;
-	  }
-	} 
-	@else {
-    @error "`#{$el}` is not a valid pseudo-element.";
-	}
-}
-
-// Image replacement
-
-@mixin img-replace($img, $w, $h, $disp: block) {
-	background-image: url('#{$path--rel}/#{$img}');
-	background-repeat: no-repeat;
-	width: $w;
-	height: $h;
-	display: $disp;
-}
-      
-// Adjacent sibling margins
-
-@mixin doubly($margin: 1em) {
-	& + & {
-	  margin-left: $margin;
-    @content;
-	}
 }
 
 // Grid Columns
@@ -120,4 +78,44 @@
   @content;
 
 }    
+
+// Generating :before or :after pseudo-element shapes
+
+// @mixin p-el(
+// 	$el,
+// 	$el-w: null,
+// 	$el-h: null) {
+// 	@if $el == "before" or $el == "after" { 
+// 	  &:#{$el} {
+// 		  @extend %pseudos;
+// 		  width: $el-w;
+// 	  	height: $el-h;
+// 	    @content;
+// 	  }
+// 	} 
+// 	@else {
+//     @error "`#{$el}` is not a valid pseudo-element.";
+// 	}
+// }
+
+// // Image replacement
+
+// @mixin img-replace($img, $w, $h, $disp: block) {
+// 	background-image: url('#{$path--rel}/#{$img}');
+// 	background-repeat: no-repeat;
+// 	width: $w;
+// 	height: $h;
+// 	display: $disp;
+// }
+      
+// // Adjacent sibling margins
+
+// @mixin doubly($margin: 1em) {
+// 	& + & {
+// 	  margin-left: $margin;
+//     @content;
+// 	}
+// }
+
+
 
